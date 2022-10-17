@@ -9,7 +9,7 @@ export const getMessages = async(req, res)=>{
         res.status(400).json({msg: "Oops ! Something went wrong"})
     }
 
-}
+} 
 
 export const createMessage = async(req, res)=>{
         try{
