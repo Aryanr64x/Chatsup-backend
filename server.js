@@ -43,6 +43,7 @@ io.on('connection', (socket) => {
         socket.join(roomname)
     });
     socket.on('new-message', ({ text, roomname })=>{
+        console.log("A new message will now be sent")
         socket.to(roomname).emit('new-message', {text})
     })
 
